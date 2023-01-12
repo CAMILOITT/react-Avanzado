@@ -1,0 +1,45 @@
+.containerCounter {
+  display: grid;
+  grid-template-areas: 'limit limit' 'counter counter' 'increment decrement' 'reset reset' 'steps steps';
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+.containerCounter__limit {
+  grid-area: limit;
+}
+.containerCounter__limit p {
+  margin: 5px 0;
+}
+.containerCounter__limit p span {
+  color: red;
+}
+.containerCounter__result {
+  grid-area: counter;
+  font-size: 2.5em;
+  color: greenyellow;
+  line-height: 1em;
+}
+.containerCounter__btn {
+  outline: none;
+}
+.containerCounter__btn:focus {
+  outline: none;
+}
+.containerCounter__btn-increment {
+  grid-area: increment;
+}
+.containerCounter__btn-decrement {
+  grid-area: decrement;
+}
+.containerCounter__btn-reset {
+  grid-area: reset;
+}
+.containerCounter__steps {
+  grid-area: steps;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+}
